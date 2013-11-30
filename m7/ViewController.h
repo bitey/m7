@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
+
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) CMStepCounter *Stepper;
+
+-(void)displayStepsTaken:(NSMutableArray*)stepsTaken;
+-(NSMutableArray*)subtractSteps:(NSMutableArray*)incomingStepArray;
 @end
